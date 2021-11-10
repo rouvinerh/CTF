@@ -1,2 +1,2 @@
 # CTF
-My solutions and write-ups to misc. CTF Challenges
+My solutions and write-ups to miscallaneous CTF challenges :)
