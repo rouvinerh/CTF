@@ -18,7 +18,7 @@ I replaced NULL with @@VERSION to determine what kind of server this is running 
 This gave me '5.5.58-0ubuntu0.14.04.1', which is a MySQL server,
 
 After which, I queried the table_name from information_schema.tables, which is a payload I googled after looking for queries with UNION.
-My payload was '1 UNION SELECT table_name,NULL,NULL,NULL FROM information_schema.tables.
+My payload was '1 UNION SELECT table_name,2,3,4 FROM information_schema.tables.
 
 Scroll down and we can find the table_name with the flag, 'w0w_y0u_f0und_m3'.
 
@@ -29,7 +29,7 @@ So we need to find the column name from here. Using the same payload as the one 
 
 Now I know the column name and the table name.
 
-I crafted the query '1 UNION SELECT f0und_m3,NULL,NULL,NULL FROM w0w_y0u_f0und_m3'
+I crafted the query '1 UNION SELECT f0und_m3,2,3,4 FROM w0w_y0u_f0und_m3'
 This printed out the flag on the screen.
 
 I used injection.py to test payloads.
