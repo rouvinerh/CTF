@@ -1,4 +1,6 @@
 This challenge was 90 points and under forensics.
+Download the file here .
+https://mercury.picoctf.net/static/ed308d382ae6bcc37a5ebc701a1cc4f4/tftp.pcapng
 
 The download gave us a .pcapng file, which instantly I knew that we had to use WireShark to get some form of data.
 
