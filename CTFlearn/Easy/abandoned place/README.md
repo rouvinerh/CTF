@@ -1,5 +1,7 @@
 Challenge is rated 30 points under Forensics Category. 
 
+Challenge gives us a jpg file and we have to analyze it.
+
 This is the challenge I learnt about reading hex code to get information about a jpeg file.
 
 Using hexdump, it outputs the file in hex editor.
