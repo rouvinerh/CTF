@@ -4,7 +4,9 @@ Gives us a pdf called dontopen.pdf.
 
 Inspecting the string of the file gives us a lot of information.
 External: Q1RGbGVhcm57KV8xbDB3M3kwVW0wMG15MTIzfQ==
+
 pin:1234
+
 Password: MTIzMVdST05HOWlzamRuUEFTU1dPUkQ=
 
 They use Base64 encryption.
