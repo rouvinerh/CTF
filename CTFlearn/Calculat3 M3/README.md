@@ -34,4 +34,5 @@ I just randomly injected ;ls and the flag was there, spent like an hour looking 
 Rule is: Don't overthink.
 
 Payload: ;ls
+
 Flag: CTFlearn{watch_0ut_f0r_th3_m0ng00s3}
