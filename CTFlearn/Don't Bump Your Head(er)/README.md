@@ -1,5 +1,8 @@
 Challenge is rated 40 points under Web Category.
 
+Challenge provides us with a website to play with:
+http://165.227.106.113/header.php
+
 This challenge hints that we have to change headers to use it. 
 I used Burp to play around and intercept the requests.
 
