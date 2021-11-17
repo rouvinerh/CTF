@@ -41,7 +41,6 @@ _start:
     mov rdi, 0
     syscall
 
-;   this is the assembly code to print the flag
 _printflag:
     mov rax, 1      ; sys_write system call
     mov rdi, 1
