@@ -15,6 +15,8 @@ Here's the cipher:
 263e203d63232f0f20653f207f332065262c3168313722367918
 2f2f372133202f142665212637222220733e383f2426386b
 
+I decoded the cipher to string inside XOR.txt.
+
 So the challenge hints that a one time pad was used, more than once and hence making it insecure.
 
 Created a small XOR script that would take each line of the cipher and decode against some key.
