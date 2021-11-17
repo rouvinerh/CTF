@@ -41,23 +41,6 @@ _start:
     mov rdi, 0
     syscall
 
-_printflag:
-    mov rax, 1      ; sys_write system call
-    mov rdi, 1
-    mov rsi, congrats
-    mov rdx, 30
-    syscall
-
-    mov rax, 1      ; sys_write system call
-    mov rdi, 1
-    mov rsi, adoni
-    mov rdx, 27
-    syscall
-
-    mov rax, 60     ; exit system call
-    mov rdi, 0
-    syscall
-
 I know from studying MIPS (thanks to a senior!) that the first word in a line is the action.
 The second word inside the line is the destination and the next one for x86_64 is the source.
 This is what I understand so far. 
