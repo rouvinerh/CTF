@@ -20,7 +20,7 @@ So we know how to reverse a hash easily, and the creator gave us this ctflag pas
 There's a zip file that is hidden within the files that has a password encrypted file.
 
 Taking it to a hash decryptor:
-md5hashing.net
+http://www.md5hashing.net
 
 We managed to brute force the password.
 
