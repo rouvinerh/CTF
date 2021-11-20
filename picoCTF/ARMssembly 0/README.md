@@ -4,59 +4,6 @@ Assembly isn't my strongest suite, so I pushed myself to do this one.
 
 Gives us a chall.S which is written in ARM assembly, a bit different from the x86 or MIPS I currently am learning. The challenge gives us some input and asks us to input these values into the program to get an asnwer.
 
-Here's the source code:
-
-func1:
-	sub	sp, sp, #16
-	str	w0, [sp, 12]
-	str	w1, [sp, 8]
-	ldr	w1, [sp, 12]
-	ldr	w0, [sp, 8]
-	cmp	w1, w0
-	bls	.L2
-	ldr	w0, [sp, 12]
-	b	.L3
-.L2:
-	ldr	w0, [sp, 8]
-.L3:
-	add	sp, sp, 16
-	ret
-	.size	func1, .-func1
-	.section	.rodata
-	.align	3
-.LC0:
-	.string	"Result: %ld\n"
-	.text
-	.align	2
-	.global	main
-	.type	main, %function
-main:
-	stp	x29, x30, [sp, -48]!
-	add	x29, sp, 0
-	str	x19, [sp, 16]
-	str	w0, [x29, 44]
-	str	x1, [x29, 32]
-	ldr	x0, [x29, 32]
-	add	x0, x0, 8
-	ldr	x0, [x0]
-	bl	atoi
-	mov	w19, w0
-	ldr	x0, [x29, 32]
-	add	x0, x0, 16
-	ldr	x0, [x0]
-	bl	atoi
-	mov	w1, w0
-	mov	w0, w19
-	bl	func1
-	mov	w1, w0
-	adrp	x0, .LC0
-	add	x0, x0, :lo12:.LC0
-	bl	printf
-	mov	w0, 0
-	ldr	x19, [sp, 16]
-	ldp	x29, x30, [sp], 48
-	ret
-
 Ok, I'll try my best to work this out.
 
 So from my understanding, str is about storing stuff into memory from the registers, and there seems to be a w0 and w1 register that does not look like the rest. sp is stack pointers, so they're just putting data into different spots in memory. 
