@@ -1,1 +1,1 @@
-picoCTF challenges.
+All picoCTF challenges!
