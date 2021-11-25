@@ -38,7 +38,7 @@ I began extracting all files using:
 steghide extract -sf picture.bmp
 
 Picture3.bmp yielded flag.txt, which was the flag in text form. Nice challenge, learn to use steghide a bit and also to analyze wireshark packets.
-I'm glad I knew what TFTP was beforehand thanks to Network+.
+I'm glad I knew what TFTP was beforehand thanks to Network+ and CCNA. 
 
 
 
