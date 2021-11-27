@@ -1,0 +1,7 @@
+A recent CTF I did solo. First time doing an actual CTF alone :O
+
+I completed 11/22 challenges, but all the pwn challenges were down before I could really start playing around with it. So I guess it's considered 11/17? Some issue with the servers of the website!
+
+I had fun this CTF, despite spending like only a few hours on it and not really taking it seriously (due to duties that exist in real life), so I guess it wasn't as bad.
+
+I ranked 75/689, which was alright I suppose!
