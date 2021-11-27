@@ -4,4 +4,8 @@ I completed 11/22 challenges, but all the pwn challenges were down before I coul
 
 I had fun this CTF, despite spending like only a few hours on it and not really taking it seriously (due to duties that exist in real life), so I guess it wasn't as bad.
 
-I ranked 75/689, which was alright I suppose!
+I ranked 76/689, which was alright I suppose!
+
+Congratulations to all the winners! This was a fun challenge. This highlighted to me the need to learn how to use pwn and automate my tools LOL
+
+
