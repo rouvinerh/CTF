@@ -68,3 +68,38 @@ main:
 	.size	main, .-main
 	.ident	"GCC: (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04) 7.5.0"
 	.section	.note.GNU-stack,"",@progbits
+
+In function, we will start from there at a faster pace:
+
+stack + 12 = input
+w0 = 81
+stack + 16 = 81
+stack + 20 = 0
+w0 = 3
+stack + 24 = 3
+w0 = stack + 20 = 0
+w1 = stack + 16 = 81
+w0 = Lsl 81,0 = 81
+stack + 28 = 81
+w1 = 81
+w0 = 3
+w0 = sdiv 81 , 3 = 27
+stack + 28 = 27
+w1 = 27
+w0 = stack + 12 (input)
+w0 = w1 - w0 = 27 - user input
+stack + 28 = 27 - userinput
+ret
+
+In main,
+There is a cmp w0, 0 function right after the function ends.
+
+This means that we need w0 to be equals to 0, as we can see a bne instruction after and that it goes to different logic statements should it NOT be equals to 0.
+
+So, our user input needs to be 27!
+
+Convert 27 to 32-bit hex and pwned!
+
+Flag: picoCTF{0000001b}
+
+
