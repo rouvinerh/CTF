@@ -4,7 +4,7 @@ def func1 (x):
     while x != 0:
         if x & 1 != 0:
             count +=3
-        x >> 1
+        x = x >> 1
 
     return count
 
